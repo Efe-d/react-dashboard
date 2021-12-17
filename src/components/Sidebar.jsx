@@ -33,9 +33,9 @@ function Sidebar() {
             <div className="menu-items">
         <div className="Items">
             {menuItem &&   
-          menuItem.map((i) => (
-            <h4><FontAwesomeIcon icon={faHome} size={4} color="#8e66db" /><a href={i.link}> {i.name} </a></h4>
-          ))
+          menuItem.map((i,index) => {
+            return (<h4 key={index} ><FontAwesomeIcon icon={faHome} size={4} color="#8e66db" /><a href={i.link}> {i.name} </a></h4>)
+          })
             }
         
         </div>

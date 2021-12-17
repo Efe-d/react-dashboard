@@ -22,9 +22,13 @@ function Header() {
         <div className="Header">
         <div className="Menu-IC">
           {menuOpen ? 
-        <FontAwesomeIcon onClick={menuToggle} icon={faTimes} size="4x" />  
+        <span>
+        <FontAwesomeIcon onClick={menuToggle} icon={faTimes} size="2x" />  
+        </span>
         :
-        <FontAwesomeIcon onClick={menuToggle} icon={faBars} size="4x" />
+        <span>
+        <FontAwesomeIcon onClick={menuToggle} icon={faBars} size="2x" />  
+        </span>
         }
         </div>
       </div>
