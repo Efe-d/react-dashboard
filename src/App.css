@@ -254,6 +254,9 @@ body {
 }
 
 @media (max-width: 1000px) {
+  .slider-box {
+   width:  calc(100vw - 40px);
+  }
   .slider-icon {
     display: none;
   }
@@ -401,9 +404,9 @@ body {
 
 .menu {
   position: absolute;
-  top: 8vh;
+  /* top: 8vh; */
   overflow: hidden;
-  height: calc(100% - 8vh);
+  height:100% ;
   left: -999px;
   opacity: 0;
   width: 24%;
@@ -422,6 +425,7 @@ body {
 }
 
 .appmain {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -494,4 +498,12 @@ body {
 .View a {
   color: white;
   text-decoration: none;
+}
+
+
+button
+{
+  outline: 0;
+  border: 0;
+  background-color: transparent;
 }
